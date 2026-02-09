@@ -1,16 +1,23 @@
 import { useState } from 'react'
 import Navbar from './assets/Navbar.jsx'
 import Hero from './assets/Hero.jsx'
+import Contact from './assets/Contact.jsx'
+import Projects from './assets/Projects.jsx'
 import Footer from './assets/Footer.jsx'
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
 
   return (
-    <>
+    <Router basename="/john-braun-dev">
       <Navbar />
-      <Hero />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/projects" element={<Projects />} />
+        {/* Add more routes here as needed */}
+      </Routes>
       <Footer />
-    </>
+    </Router>
   )
 }
 
