@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <header 
-            class="text-sm bg-blue-900 text-white absolute w-full bottom-0 p-2 flex gap-4"
+            className="text-sm text-white absolute w-full bottom-0 p-2 flex gap-4"
         >
             <p>Impressum</p> {/*TODO: change to a later when routing is implemented */}
             <p>Contact</p>
