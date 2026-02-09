@@ -3,8 +3,6 @@ import vanIsle from "../../public/van-isle.jpg"
 export default function Hero() {
     return (
         <section 
-            // 1. Changed py-72 to min-h-screen to fill the whole screen
-            // 2. Added flex items-center justify-center to center the content div
             className="font-mono relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat text-center text-white"
             style={{ backgroundImage: `linear-gradient(to bottom, rgba(16, 0, 76, 0) 0%, rgba(0, 20, 68, 0.39) 100%), url(${vanIsle})` }}
         >
