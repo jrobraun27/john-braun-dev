@@ -1,4 +1,5 @@
 import vanIsle from "../../public/van-isle.jpg"
+import githubLogo from "../../public/github-logo.png"
 
 export default function Hero() {
     return (
