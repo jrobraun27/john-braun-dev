@@ -1,19 +1,20 @@
 import vanIsle from "../../public/van-isle.jpg"
-import linkedinLogo from "../../public/linkedin.png"
 
 export default function Hero() {
     return (
         <section 
-            className="font-mono relative bg-cover bg-center bg-no-repeat py-72 text-center text-white"
-            style={{ backgroundImage: `linear-gradient(to bottom, rgba(16, 0, 76, 0) 0%, rgba(0, 20, 68, 0.39) 100%), url(${vanIsle})` }} //
+            // 1. Changed py-72 to min-h-screen to fill the whole screen
+            // 2. Added flex items-center justify-center to center the content div
+            className="font-mono relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat text-center text-white"
+            style={{ backgroundImage: `linear-gradient(to bottom, rgba(16, 0, 76, 0) 0%, rgba(0, 20, 68, 0.39) 100%), url(${vanIsle})` }}
         >
-            <div className="absolute inset-0 bg-black/40"></div> {/* */}
+            <div className="absolute inset-0 bg-black/50"></div>
 
-            <div className="relative z-10 flex flex-col items-center justify-center"> {/* Added flex for vertical/horizontal control */}
-                <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            <div className="relative z-10 flex flex-col items-center px-4"> 
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
                     Welcome to John Braun Dev
                 </h1>
-                <p className="text-lg md:text-xl mb-8">
+                <p className="text-lg md:text-xl max-w-2xl mb-8">
                     Building modern web applications with React and Tailwind CSS.
                 </p>
 
@@ -36,7 +37,6 @@ export default function Hero() {
                         rel="noopener noreferrer"
                         className="hover:opacity-75 transition-all hover:scale-110"
                     >
-                        {/* Fix: Used CDN for LinkedIn to match the GitHub style and stay white */}
                         <img 
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                             alt="LinkedIn" 
