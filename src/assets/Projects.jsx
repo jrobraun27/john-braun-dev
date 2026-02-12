@@ -1,4 +1,4 @@
-import sunset from '../../public/van-isle.jpg'
+import sunset from '../../public/van-isle.webp'
 
 export default function Projects() {
     return (

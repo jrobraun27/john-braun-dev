@@ -1,4 +1,4 @@
-import vanIsle from "../../public/van-isle.jpg"
+import vanIsle from "../../public/van-isle.webp"
 
 export default function Hero() {
     return (
@@ -6,7 +6,7 @@ export default function Hero() {
             className="font-mono relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat text-center text-white"
             style={{ backgroundImage: `linear-gradient(to bottom, rgba(16, 0, 76, 0) 0%, rgba(0, 20, 68, 0.39) 100%), url(${vanIsle})` }}
         >
-            <div className="absolute inset-0 bg-black/50"></div>
+            <div className="absolute inset-0 bg-black/30"></div>
 
             <div className="relative z-10 flex flex-col items-center px-4"> 
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
