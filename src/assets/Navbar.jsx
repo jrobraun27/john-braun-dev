@@ -11,6 +11,7 @@ export default function Navbar() {
             <p onClick={(e) => navigate("/")} class="mr-auto cursor-pointer">John Braun Dev</p> {/*TODO: change to a later when routing is implemented */}
             <p onClick={(e) => navigate("/contact")} class="cursor-pointer">Contact</p>
             <p onClick={(e) => navigate("/projects")} class="cursor-pointer">Projects</p>
+            <p onClick={(e) => navigate("/adventures")} class="cursor-pointer">Adventures</p>
         </header>
     )
 }

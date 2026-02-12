@@ -1,4 +1,4 @@
-import sunset from '../../public/sunset.jpg'
+import sunset from '../../public/van-isle.jpg'
 
 export default function Projects() {
     return (

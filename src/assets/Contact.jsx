@@ -1,4 +1,4 @@
-import cliffside from '../../public/cliffside.jpg'
+import cliffside from '../../public/van-isle.jpg'
 
 export default function Contact() {
     return (
