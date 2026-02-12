@@ -6,15 +6,17 @@ import caucaus from "../../../public/caucaus.jpg"
 export const ARTICLES = [
     {
         id: 1,
+        slug: "prishtina-hidden-gem",
         title: "Prishtina, Europe's Last Hidden Gem",
         date: "February 2026",
         preview: "Exploring the nostalgic capital of Europe's most controversial country.",
         image: prishtina, 
-        ready: true,
+        ready: false,
         content: "Prishtina is a city that defies expectations. From the brutalist masterpiece of the National Library to the bustling cafes of Mother Teresa Boulevard, it's a place where history is felt in every concrete corner. Despite its complex political status, the warmth of the locals and the vibrant youth culture make it one of the most underrated stops in the Balkans."
     },
     {
         id: 2,
+        slug: "tirana-city-scarred",
         title: "Tirana, A City Scarred from the Past",
         date: "February 2026",
         preview: "Discovering the stories behind Tirana's troubled architecture.",

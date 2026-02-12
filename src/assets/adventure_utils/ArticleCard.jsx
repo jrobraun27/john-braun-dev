@@ -1,4 +1,6 @@
-export default function ArticleCard({ article, onOpen }) {
+import { Link } from "react-router-dom";
+
+export default function ArticleCard({ article }) {
     return (
         <article className={`bg-white/10 backdrop-blur-md rounded-lg overflow-hidden border border-white/20 transition-all duration-300 ${article.ready ? "hover:scale-105" : "opacity-75"}`}>
             <img src={article.image} alt={article.title} className="w-full h-48 object-cover" />
@@ -8,12 +10,13 @@ export default function ArticleCard({ article, onOpen }) {
                 <p className="text-sm text-gray-200 mb-6 line-clamp-2">{article.preview}</p>
                 
                 {article.ready ? (
-                    <button 
-                        onClick={onOpen} // Call the function here!
-                        className="text-xs font-bold uppercase tracking-widest border-b-2 border-white pb-1 hover:text-blue-300 hover:border-blue-300 transition-colors"
+                    // ArticleCard.jsx
+                    <Link 
+                        to={`/adventures/${article.slug}`} // Add /adventures/ back in
+                        className="text-xs font-bold uppercase tracking-widest border-b-2 border-white pb-1 hover:text-blue-300 hover:border-blue-300 transition-colors inline-block"
                     >
                         Read More
-                    </button>
+                    </Link>
                 ) : (
                     <span className="text-xs font-bold uppercase tracking-widest text-gray-400 italic">Coming Soon</span>
                 )}
